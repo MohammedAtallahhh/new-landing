@@ -1,5 +1,28 @@
+/* Tajawal Font */
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+
 @import "variables";
+@import "header";
+@import "hero";
 
 body {
-  background: $color;
+  font-family: Tajawal, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+.brands {
+  background: #f2f2f2;
+}
+
+.features {
+  background: $primary;
+  color: $primary-accent;
+  padding: 5rem 0;
 }

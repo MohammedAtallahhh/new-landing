@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 
 <head>
     <meta charset="utf-8">
@@ -13,11 +13,188 @@
 </head>
 
 <body>
-    <h1>Hello, world!</h1>
+
+    <!-- Header -->
+    <header class="main__header">
+        <!-- Header Top -->
+        <div class="header__top">
+            <div class="container d-flex justify-content-between py-3">
+                <!-- Country -->
+                <div class="country">
+                    <img src="./images/SA-flag.svg" alt="Country flag" class="flag">
+
+                    <div class="text d-flex flex-column align-items-center me-2">
+                        <span>تسليم لـ</span>
+                        <span>جدة</span>
+                    </div>
+
+                    <div class="arrow d-flex justify-content-center align-items-center">
+                        <img src="./images/arrow.svg" alt="arrow down">
+                    </div>
+                </div>
+
+                <!-- Language -->
+                <div class="language">
+                    <h4 class="text">عربي</h4>
+                    <div class="arrow d-flex justify-content-center align-items-center">
+                        <img src="./images/arrow.svg" alt="arrow down">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header Bottom -->
+        <div class="header__bottom">
+            <div class="container py-3 gap-3 d-flex justify-content-center align-items-center">
+
+                <!-- Logo -->
+                <div class="logo">
+                    <img src="./images/logo.png" alt="Logo">
+                </div>
+
+                <!-- Search bar -->
+                <div class="search position-relative flex-grow-1 d-flex">
+                    <input type="search" name="search" placeholder="عن ماذا تبحث؟" class="w-100">
+                    <div class="icon">
+                        <img src="./images/search.svg" alt="Search icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <main class="hero">
+        <div class="image d-flex justify-content-center">
+            <img src="./images/hero-mobile-banner.png" alt="" class="w-100">
+        </div>
+
+        <div id="categories"
+            class="categories carousel slide d-flex flex-column-reverse justify-content-center align-items-center"
+            data-bs-ride="carousel">
+
+            <!-- Carousel indicators -->
+            <div class="carousel-indicators position-static d-flex gap-2 mt-4" dir="ltr">
+                <button data-bs-target="#categories" data-bs-slide-to="0" class="active" aria-current="true"
+                    aria-label="Slide 1"></button>
+
+                <button data-bs-target="#categories" data-bs-slide-to="1"></button>
+            </div>
+
+            <div class="carousel-inner">
+
+                <!-- Carousel Item -->
+                <div class="carousel-item active">
+
+                    <div class="carousel-item-inner d-flex justify-content-center flex-wrap">
+
+
+                        <!-- image -->
+                        <div class="item d-flex flex-column gap-3">
+                            <img src="./images/hero-categories-electronics.png" alt="Electronics">
+
+                            <h3 class="label text-center">إلكترونيات</h3>
+                        </div>
+
+                        <!-- image -->
+                        <div class="item d-flex flex-column gap-3">
+                            <img src="./images/hero-categories-watches.png" alt="Watches">
+                            <h3 class="label text-center">ساعات ذكية</h3>
+                        </div>
+
+                        <!-- image -->
+                        <div class="item d-flex flex-column gap-3">
+                            <img src="./images/hero-categories-women.png" alt="Women">
+                            <h3 class="label text-center">ملابس نسائية</h3>
+                        </div>
+
+                        <!-- image -->
+                        <div class="item d-flex flex-column gap-3">
+                            <img src="./images/hero-categories-makeup.png" alt="Makeup">
+                            <h3 class="label text-center">أدوات تجميل</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel Item -->
+                <div class="carousel-item">
+                    <div class="carousel-item-inner  d-flex justify-content-center flex-wrap">
+                        <!-- image -->
+                        <div class="item d-flex flex-column gap-3">
+                            <img src="./images/hero-categories-gaming.png" alt="Electronics">
+
+                            <h3 class="label text-center">ألعاب</h3>
+                        </div>
+
+                        <!-- image -->
+                        <div class="item d-flex flex-column gap-3">
+                            <img src="./images/hero-categories-men.png" alt="Watches">
+                            <h3 class="label text-center">ملابس رجالة</h3>
+                        </div>
+
+                        <!-- image -->
+                        <div class="item d-flex flex-column gap-3">
+                            <img src="./images/hero-categories-mobiles.png" alt="Women">
+                            <h3 class="label text-center">موبايلات</h3>
+                        </div>
+
+                        <!-- image -->
+                        <div class="item d-flex flex-column gap-3">
+                            <img src="./images/hero-categories-cameras.png" alt="Makeup">
+                            <h3 class="label text-center">كاميرات</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <!-- Brands -->
+    <section class="brands p-5 text-center">
+        <div class="container">
+            <h2 class="title mb-5">أفضل العلامات التجارية</h2>
+
+            <div class="images d-flex gap-5 justify-content-center align-items-center">
+                <img src="./images/brands-addidas.png" alt="Addidas logo">
+                <img src="./images/brands-hm.png" alt="H&M logo">
+                <img src="./images/brands-essence.png" alt="Essence logo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features d-flex flex-column justify-content-center align-items-center gap-5">
+
+        <div class="item">
+            <img src="./images/features-1.svg" alt="Car">
+            <h3 class="mt-3">شحن مجاني</h3>
+        </div>
+
+        <div class="item">
+            <img src="./images/features-2.svg" alt="Car">
+            <h3 class="mt-3"> خدمة 24 / 7</h3>
+        </div>
+
+        <div class="item">
+            <img src="./images/features-3.svg" alt="Car">
+            <h3 class="mt-3">سهولة الارجاع</h3>
+        </div>
+
+        <div class="item">
+            <img src="./images/features-4.svg" alt="Car">
+            <h3 class="mt-3">دفع إلكتروني</h3>
+        </div>
+
+    </section>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+
+    <script src="index.js"></script>
 </body>
 
 </html>

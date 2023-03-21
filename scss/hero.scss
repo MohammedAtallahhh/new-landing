@@ -1,0 +1,31 @@
+.categories {
+  padding: 3rem 2rem;
+
+  .carousel-indicators button {
+    all: unset;
+    background: #d9dbe1;
+    font-size: 0.625rem;
+    width: 1em;
+    height: 1em;
+    border-radius: 0.5em;
+    cursor: pointer;
+
+    &.active {
+      width: 1rem;
+      background: $primary;
+    }
+  }
+}
+
+.carousel-item-inner {
+  gap: 0.625rem 2.2rem;
+
+  .item {
+    flex: 1 0 calc(50% - 3.5rem);
+    max-width: 25rem;
+
+    .label {
+      font-size: 1.125rem;
+    }
+  }
+}

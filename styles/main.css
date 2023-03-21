@@ -1,5 +1,89 @@
+/* Tajawal Font */
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+.header__top {
+  background: #b92728;
+  color: #ffffff;
+}
+.header__top :is(.country, .language) {
+  display: flex;
+  align-items: center;
+}
+.header__top .arrow {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.header__top .text {
+  font-weight: 500;
+}
+.header__top .country .text {
+  font-size: 0.875rem;
+}
+.header__top .language .text {
+  font-size: 1rem;
+}
+
+.header__bottom input {
+  border: none;
+  background: #ffffff;
+  padding: 0.85rem 1.25rem;
+  box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04), 0px 4px 16px rgba(51, 51, 51, 0.08);
+  border-radius: 999rem;
+}
+.header__bottom .icon {
+  position: absolute;
+  left: 0.95rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.categories {
+  padding: 3rem 2rem;
+}
+.categories .carousel-indicators button {
+  all: unset;
+  background: #d9dbe1;
+  font-size: 0.625rem;
+  width: 1em;
+  height: 1em;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+.categories .carousel-indicators button.active {
+  width: 1rem;
+  background: #b92728;
+}
+
+.carousel-item-inner {
+  gap: 0.625rem 2.2rem;
+}
+.carousel-item-inner .item {
+  flex: 1 0 calc(50% - 3.5rem);
+  max-width: 25rem;
+}
+.carousel-item-inner .item .label {
+  font-size: 1.125rem;
+}
+
 body {
-  background: blue;
+  font-family: Tajawal, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+.brands {
+  background: #f2f2f2;
+}
+
+.features {
+  background: #b92728;
+  color: #ffffff;
+  padding: 5rem 0;
 }
 
 /*# sourceMappingURL=main.css.map */
