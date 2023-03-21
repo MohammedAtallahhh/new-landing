@@ -1,5 +1,5 @@
 /* Tajawal Font */
-@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
 .header__top {
   background: #b92728;
   color: #ffffff;
@@ -70,10 +70,31 @@ body {
 
 img {
   max-width: 100%;
+  user-select: none;
 }
 
 button {
   cursor: pointer;
+}
+
+.btn-primary {
+  background: #b92728;
+  border-color: #b92728;
+  border-radius: 9999rem;
+  padding-inline: 0.75rem;
+}
+
+.btn-primary:hover,
+.btn-primary:visited {
+  background-color: #a01818;
+  border-color: #a01818;
+}
+
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: #a01818;
+  border-color: #a01818;
+  box-shadow: 0 0 0 0.25rem rgba(211, 45, 45, 0.5058823529) !important;
 }
 
 .brands {
@@ -83,7 +104,62 @@ button {
 .features {
   background: #b92728;
   color: #ffffff;
-  padding: 5rem 0;
+  padding: 2.5rem 0;
+  gap: 4rem;
+}
+.features .label {
+  font-size: 2rem;
+}
+
+.offers .title {
+  font-size: 1.5rem;
+}
+.offers-list {
+  gap: 2.5rem;
+}
+.offers .footer-btn {
+  margin-top: 2.5rem;
+}
+
+.offers .offer {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.offers .offer h3 {
+  font-size: 1.125rem;
+}
+.offers .offer p {
+  font-size: 0.8rem;
+}
+.offers .offer .rate {
+  margin-bottom: 1.5rem;
+}
+.offers .offer .image img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.offer .timer {
+  font-family: "Syncopate", sans-serif;
+  font-weight: 400;
+}
+.offer .timer .digit {
+  position: relative;
+}
+.offer .timer .digit:not(:first-child):after {
+  content: ":";
+  position: absolute;
+  right: -0.65rem;
+  top: 0;
+}
+.offer .timer .number {
+  font-size: 0.875rem;
+  margin-bottom: 0.25rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.offer .timer .label {
+  font-size: 0.875rem;
 }
 
 /*# sourceMappingURL=main.css.map */
