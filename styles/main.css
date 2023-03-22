@@ -118,6 +118,7 @@ button {
   color: black;
   background: none;
   border: none;
+  font-size: 0.875rem;
   font-weight: 700;
   padding-left: 1.5rem;
   border-left: 1px solid #c4c4c4;
@@ -137,14 +138,23 @@ button {
   font-size: 0.875rem;
 }
 
+.hero .carousel .carousel-indicators button {
+  background: #212529;
+  border: 0;
+}
+.hero .carousel .carousel-indicators button.active {
+  background: #b92728;
+}
 .hero .swiper-slide-inner {
   gap: 0.625rem 2.2rem;
+  max-width: 400px;
+  margin: 0 auto;
 }
 .hero .swiper-slide-inner .item {
   flex: 1 0 calc(50% - 3.5rem);
   max-width: 25rem;
 }
-.hero .swiper-slide-inner .item .label {
+.hero .label {
   font-size: 1.125rem;
 }
 
@@ -252,12 +262,28 @@ section {
 .brands .title {
   font-size: 1.4rem;
 }
+@media (min-width: 991px) {
+  .brands .title {
+    font-size: 1.75rem;
+  }
+}
+.brands img {
+  width: 3.6rem;
+}
+@media (min-width: 768px) {
+  .brands img {
+    width: auto;
+  }
+}
 
 .features {
   background: #b92728;
   color: #ffffff;
   padding: 2.5rem 0;
+}
+.features .container-lg {
   gap: 4rem;
+  max-width: 1200px;
 }
 .features .label {
   font-size: 2rem;

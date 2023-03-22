@@ -2,6 +2,20 @@ new Swiper("#categories", {
   spaceBetween: 20,
   autoplay: true,
 
+  breakpoints: {
+    768: {
+      slidesPerView: 4,
+    },
+
+    991: {
+      slidesPerView: 5,
+    },
+
+    1200: {
+      slidesPerView: 6,
+    },
+  },
+
   pagination: {
     el: ".categories__slider__controls",
     clickable: true,

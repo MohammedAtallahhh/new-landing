@@ -42,6 +42,18 @@ section {
 
   .title {
     font-size: 1.4rem;
+
+    @media (min-width: 991px) {
+      font-size: 1.75rem;
+    }
+  }
+
+  img {
+    width: 3.6rem;
+
+    @media (min-width: 768px) {
+      width: auto;
+    }
   }
 }
 
@@ -50,7 +62,11 @@ section {
   background: $primary;
   color: $primary-accent;
   padding: 2.5rem 0;
-  gap: 4rem;
+
+  .container-lg {
+    gap: 4rem;
+    max-width: 1200px;
+  }
 
   .label {
     font-size: 2rem;

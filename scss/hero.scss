@@ -1,13 +1,27 @@
-.hero .swiper-slide-inner {
-  gap: 0.625rem 2.2rem;
+.hero {
+  .carousel {
+    .carousel-indicators button {
+      background: #212529;
+      border: 0;
 
-  .item {
-    flex: 1 0 calc(50% - 3.5rem);
-    max-width: 25rem;
-
-    .label {
-      font-size: 1.125rem;
+      &.active {
+        background: $primary;
+      }
     }
+  }
+
+  .swiper-slide-inner {
+    gap: 0.625rem 2.2rem;
+    max-width: 400px;
+    margin: 0 auto;
+
+    .item {
+      flex: 1 0 calc(50% - 3.5rem);
+      max-width: 25rem;
+    }
+  }
+  .label {
+    font-size: 1.125rem;
   }
 }
 
