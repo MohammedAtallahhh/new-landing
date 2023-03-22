@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
 
 @import "variables";
+@import "helpers";
 @import "header";
 @import "hero";
 @import "offers";
@@ -20,27 +21,8 @@ button {
 }
 
 section {
+  padding: 2.5rem 0;
   overflow: hidden;
-}
-
-.btn-primary {
-  background: $primary;
-  border-color: $primary;
-  border-radius: 9999rem;
-  padding-inline: 0.75rem;
-}
-
-.btn-primary:hover,
-.btn-primary:visited {
-  background-color: $primary-hover;
-  border-color: $primary-hover;
-}
-
-.btn-primary:focus,
-.btn-primary:active {
-  background-color: $primary-hover;
-  border-color: $primary-hover;
-  box-shadow: 0 0 0 0.25rem #d32d2d81 !important;
 }
 
 // Brands
@@ -61,5 +43,56 @@ section {
 
   .label {
     font-size: 2rem;
+  }
+}
+
+// Advertisement
+.ad {
+  h3 {
+    font-size: 0.875rem;
+    font-weight: 700;
+    margin-bottom: 0.625rem;
+  }
+
+  h4 {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: $primary;
+    margin-bottom: 1.7rem;
+
+    span {
+      color: $accent;
+    }
+  }
+
+  .btn {
+    font-size: 1rem;
+    font-weight: 700;
+    padding-inline: 0.9rem;
+    height: 4.5rem;
+    width: 100%;
+
+    position: relative;
+  }
+}
+
+// SHOPS
+.shops__carousel {
+  padding: 0;
+  padding-top: 1.25rem;
+
+  .carousel-item-inner {
+    max-width: 330px;
+    margin: 0 auto;
+
+    .name {
+      font-size: 1.125rem;
+    }
+
+    .price {
+      font-size: 2.25rem;
+      font-weight: 700;
+      color: $primary;
+    }
   }
 }

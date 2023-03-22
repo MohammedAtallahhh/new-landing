@@ -1,0 +1,43 @@
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.btn-primary {
+  background: $primary;
+  border-color: $primary;
+  border-radius: 9999rem;
+  padding-inline: 0.75rem;
+}
+
+.btn-primary:hover,
+.btn-primary:visited {
+  background-color: $primary-hover;
+  border-color: $primary-hover;
+}
+
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: $primary-hover;
+  border-color: $primary-hover;
+  box-shadow: 0 0 0 0.25rem #d32d2d81 !important;
+}
+
+.carousel {
+  padding: 3rem 2rem;
+
+  .indicators button {
+    all: unset;
+    background: #d9dbe1;
+    font-size: 0.625rem;
+    width: 1em;
+    height: 1em;
+    border-radius: 0.5em;
+    cursor: pointer;
+
+    &.active {
+      width: 1rem;
+      background: $primary;
+    }
+  }
+}

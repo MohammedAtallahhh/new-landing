@@ -1,5 +1,47 @@
 /* Tajawal Font */
 @import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.btn-primary {
+  background: #b92728;
+  border-color: #b92728;
+  border-radius: 9999rem;
+  padding-inline: 0.75rem;
+}
+
+.btn-primary:hover,
+.btn-primary:visited {
+  background-color: #a01818;
+  border-color: #a01818;
+}
+
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: #a01818;
+  border-color: #a01818;
+  box-shadow: 0 0 0 0.25rem rgba(211, 45, 45, 0.5058823529) !important;
+}
+
+.carousel {
+  padding: 3rem 2rem;
+}
+.carousel .indicators button {
+  all: unset;
+  background: #d9dbe1;
+  font-size: 0.625rem;
+  width: 1em;
+  height: 1em;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+.carousel .indicators button.active {
+  width: 1rem;
+  background: #b92728;
+}
+
 .header__top {
   background: #b92728;
   color: #ffffff;
@@ -36,34 +78,20 @@
   transform: translateY(-50%);
 }
 
-.categories {
-  padding: 3rem 2rem;
-}
-.categories .carousel-indicators button {
-  all: unset;
-  background: #d9dbe1;
-  font-size: 0.625rem;
-  width: 1em;
-  height: 1em;
-  border-radius: 0.5em;
-  cursor: pointer;
-}
-.categories .carousel-indicators button.active {
-  width: 1rem;
-  background: #b92728;
-}
-
-.carousel-item-inner {
+.hero .carousel-item-inner {
   gap: 0.625rem 2.2rem;
 }
-.carousel-item-inner .item {
+.hero .carousel-item-inner .item {
   flex: 1 0 calc(50% - 3.5rem);
   max-width: 25rem;
 }
-.carousel-item-inner .item .label {
+.hero .carousel-item-inner .item .label {
   font-size: 1.125rem;
 }
 
+.offers {
+  background: #fff6f2;
+}
 .offers .title {
   font-size: 1.5rem;
 }
@@ -136,27 +164,8 @@ button {
 }
 
 section {
+  padding: 2.5rem 0;
   overflow: hidden;
-}
-
-.btn-primary {
-  background: #b92728;
-  border-color: #b92728;
-  border-radius: 9999rem;
-  padding-inline: 0.75rem;
-}
-
-.btn-primary:hover,
-.btn-primary:visited {
-  background-color: #a01818;
-  border-color: #a01818;
-}
-
-.btn-primary:focus,
-.btn-primary:active {
-  background-color: #a01818;
-  border-color: #a01818;
-  box-shadow: 0 0 0 0.25rem rgba(211, 45, 45, 0.5058823529) !important;
 }
 
 .brands {
@@ -174,6 +183,46 @@ section {
 }
 .features .label {
   font-size: 2rem;
+}
+
+.ad h3 {
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-bottom: 0.625rem;
+}
+.ad h4 {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #b92728;
+  margin-bottom: 1.7rem;
+}
+.ad h4 span {
+  color: #000;
+}
+.ad .btn {
+  font-size: 1rem;
+  font-weight: 700;
+  padding-inline: 0.9rem;
+  height: 4.5rem;
+  width: 100%;
+  position: relative;
+}
+
+.shops__carousel {
+  padding: 0;
+  padding-top: 1.25rem;
+}
+.shops__carousel .carousel-item-inner {
+  max-width: 330px;
+  margin: 0 auto;
+}
+.shops__carousel .carousel-item-inner .name {
+  font-size: 1.125rem;
+}
+.shops__carousel .carousel-item-inner .price {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #b92728;
 }
 
 /*# sourceMappingURL=main.css.map */
