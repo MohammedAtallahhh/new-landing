@@ -8,6 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="styles/main.css">
     <title>Landing</title>
 </head>
@@ -54,7 +56,7 @@
 
                 <!-- Search bar -->
                 <div class="search position-relative flex-grow-1 d-flex">
-                    <input type="search" name="search" placeholder="عن ماذا تبحث؟" class="w-100">
+                    <input type="search" name="search" placeholder="عن ماذا تبحث؟" class="input">
                     <div class="icon">
                         <img src="./images/search.svg" alt="Search icon">
                     </div>
@@ -69,26 +71,13 @@
             <img src="./images/hero-mobile-banner.png" alt="" class="w-100">
         </div>
 
-        <div id="categories"
-            class="categories carousel slide d-flex flex-column-reverse justify-content-center align-items-center"
-            data-bs-ride="carousel">
+        <div id="categories" class="swiper d-flex flex-column justify-content-center align-items-center">
 
-            <!-- Carousel indicators -->
-            <div class="indicators carousel-indicators position-static d-flex gap-2 mt-4" dir="ltr">
-                <button data-bs-target="#categories" data-bs-slide-to="0" class="active" aria-current="true"
-                    aria-label="Slide 1"></button>
-
-                <button data-bs-target="#categories" data-bs-slide-to="1"></button>
-            </div>
-
-            <div class="carousel-inner">
+            <div class="swiper-wrapper">
 
                 <!-- Carousel Item -->
-                <div class="carousel-item active">
-
-                    <div class="carousel-item-inner d-flex justify-content-center flex-wrap">
-
-
+                <div class="swiper-slide">
+                    <div class="swiper-slide-inner d-flex justify-content-center flex-wrap">
                         <!-- image -->
                         <div class="item d-flex flex-column gap-3">
                             <img src="./images/hero-categories-electronics.png" alt="Electronics">
@@ -117,8 +106,8 @@
                 </div>
 
                 <!-- Carousel Item -->
-                <div class="carousel-item">
-                    <div class="carousel-item-inner  d-flex justify-content-center flex-wrap">
+                <div class="swiper-slide">
+                    <div class="swiper-slide-inner d-flex justify-content-center flex-wrap">
                         <!-- image -->
                         <div class="item d-flex flex-column gap-3">
                             <img src="./images/hero-categories-gaming.png" alt="Electronics">
@@ -146,6 +135,8 @@
                     </div>
                 </div>
             </div>
+
+            <div class="slider__controls categories__slider__controls"></div>
         </div>
 
 
@@ -361,15 +352,15 @@
 
             <h2 class="title text-center">أسواق جدة</h2>
 
-            <div id="shops" class="shops__carousel carousel slide">
+            <div id="shops" class="swiper">
 
 
-                <div class="carousel-inner">
+                <div class="swiper-wrapper">
 
                     <!-- Slides -->
 
                     <!-- Item -->
-                    <div class="carousel-item active">
+                    <div class="swiper-slide active">
                         <!-- Item inner -->
                         <div class="carousel-item-inner d-flex flex-column gap-2">
 
@@ -402,7 +393,7 @@
                     </div>
 
                     <!-- Item -->
-                    <div class="carousel-item">
+                    <div class="swiper-slide">
                         <!-- Item inner -->
                         <div class="carousel-item-inner d-flex flex-column gap-2">
 
@@ -435,7 +426,7 @@
                     </div>
 
                     <!-- Item -->
-                    <div class="carousel-item">
+                    <div class="swiper-slide">
                         <!-- Item inner -->
                         <div class="carousel-item-inner d-flex flex-column gap-2">
 
@@ -468,7 +459,7 @@
                     </div>
 
                     <!-- Item -->
-                    <div class="carousel-item">
+                    <div class="swiper-slide">
                         <!-- Item inner -->
                         <div class="carousel-item-inner d-flex flex-column gap-2">
 
@@ -502,23 +493,216 @@
                 </div>
 
 
-                <!-- Carousel indicators -->
-                <div class="indicators carousel-indicators position-static d-flex gap-2 mt-4" dir="ltr">
-                    <button data-bs-target="#shops" data-bs-slide-to="0" class="active" aria-current="true"
-                        aria-label="Slide 1"></button>
-
-                    <button data-bs-target="#shops" data-bs-slide-to="1"></button>
-                    <button data-bs-target="#shops" data-bs-slide-to="2"></button>
-                    <button data-bs-target="#shops" data-bs-slide-to="3"></button>
-                </div>
+                <!-- Swiper indicators -->
+                <div class="slider__controls shops__slider__controls"></div>
             </div>
         </div>
     </section>
+
+    <!-- Sale -->
+    <section class="sale">
+        <div class="container-lg">
+            <!-- Header -->
+            <header>
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2 class="title fw-normal mb-0">تخفيضات حتى 40%</h2>
+                    <button class="btn btn-secondary">تسوق الان</button>
+                </div>
+
+                <p>
+                    عروض لمدة 24 ساعة تصفح المنتجات الان قبل نفاذ الكمية
+                </p>
+            </header>
+
+            <div id="sale" class="swiper">
+                <div class="swiper-wrapper mb-5">
+
+                    <!-- Item -->
+                    <div class="swiper-slide item d-flex flex-column align-items-center gap-3">
+                        <!-- Image -->
+                        <div class="image">
+                            <img src="./images/sale-1.png" alt="">
+                        </div>
+
+                        <div class="label">أحذية</div>
+                    </div>
+
+                    <div class="swiper-slide item d-flex flex-column align-items-center gap-3">
+                        <!-- Image -->
+                        <div class="image">
+                            <img src="./images/sale-2.png" alt="">
+                        </div>
+
+                        <div class="label">أحذية</div>
+                    </div>
+
+                    <!-- Item -->
+                    <div class="swiper-slide item d-flex flex-column align-items-center gap-3">
+                        <!-- Image -->
+                        <div class="image">
+                            <img src="./images/sale-3.png" alt="">
+                        </div>
+
+                        <div class="label">أحذية</div>
+                    </div>
+
+                    <div class="swiper-slide item d-flex flex-column align-items-center gap-3">
+                        <!-- Image -->
+                        <div class="image">
+                            <img src="./images/sale-4.png" alt="">
+                        </div>
+
+                        <div class="label">أحذية</div>
+                    </div>
+
+                    <!-- Item -->
+                    <div class="swiper-slide d-flex flex-column align-items-center gap-3">
+                        <!-- Image -->
+                        <div class="image">
+                            <img src="./images/sale-5.png" alt="">
+                        </div>
+
+                        <div class="label">أحذية</div>
+                    </div>
+
+                    <div class="swiper-slide item d-flex flex-column align-items-center gap-3">
+                        <!-- Image -->
+                        <div class="image">
+                            <img src="./images/sale-6.png" alt="">
+                        </div>
+
+                        <div class="label">أحذية</div>
+                    </div>
+
+                    <!-- Item -->
+                    <div class="swiper-slide d-flex flex-column align-items-center gap-3">
+                        <!-- Image -->
+                        <div class="image">
+                            <img src="./images/sale-3.png" alt="">
+                        </div>
+
+                        <div class="label">أحذية</div>
+                    </div>
+
+                    <div class="swiper-slide d-flex flex-column align-items-center gap-3">
+                        <!-- Image -->
+                        <div class="image">
+                            <img src="./images/sale-4.png" alt="">
+                        </div>
+
+                        <div class="label">أحذية</div>
+                    </div>
+                </div>
+
+                <!-- Swiper indicators -->
+                <div class="slider__controls sale__slider__controls"></div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container-lg d-flex flex-column align-items-center">
+            <div class="image">
+                <img src="./images/newsletter.svg" alt="Envlope">
+            </div>
+
+            <h5>احصل على خصم <span>20%</span> عند الاشتراك فى قائمة المراسلات</h5>
+
+            <form>
+                <input type="email" placeholder="Enter your Email" class="input" dir="ltr">
+                <button class="btn btn-primary">اشترك الان</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container top d-flex flex-column gap-5">
+            <div class="content d-flex flex-column gap-4">
+                <div class="logo">
+                    <img src="./images/logo.png" alt="Logo">
+                </div>
+
+                <h3>افضل متجر عربى </h3>
+                <h3>نقدم افضل المنتجات بأعلى جودة.</h3>
+            </div>
+
+            <div class="footer__lists d-flex flex-column">
+
+                <!-- List -->
+                <ul class="list d-flex flex-column gap-3">
+                    <h5 class="label">من نحن</h5>
+
+                    <li>
+                        <a href="#">تعرف علينا</a>
+                    </li>
+                    <li>
+                        <a href="#">تواصل معنا</a>
+                    </li>
+                    <li>
+                        <a href="#">الشروط و الأحكام</a>
+                    </li>
+                    <li>
+                        <a href="#">سياسة الارجاع والتبديل</a>
+                    </li>
+                    <li>
+                        <a href="#">معلومات الشحن والارسال</a>
+                    </li>
+                </ul>
+
+                <!-- List -->
+                <ul class="list d-flex flex-column gap-3">
+                    <h5 class="label">حسابي</h5>
+
+                    <li>
+                        <a href="#">صفحتك الشخصية</a>
+                    </li>
+                    <li>
+                        <a href="#">تتبع طلبيتك</a>
+                    </li>
+                    <li>
+                        <a href="#">اعدادت الدفع الالكترونى</a>
+                    </li>
+                    <li>
+                        <a href="#">أسالة وأجوبة</a>
+                    </li>
+
+                </ul>
+
+                <!-- List -->
+                <ul class="list d-flex flex-column gap-4">
+                    <h5 class="label">تواصل معنا</h5>
+
+                    <li>
+                        <a href="#">الرياض , المملكة العربية السعودية</a>
+                    </li>
+                    <li>
+                        <a href="#">اتصل بنا الاّن : 04200000</a>
+                    </li>
+                    <li>
+                        <a href="#">راسلنا الان : support@Taswaq.com</a>
+                    </li>
+                    <li>
+                        <a href="#">فاكس : 23232</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="container-lg bottom py-4 text-center">
+            <p>جميع الحقوق محفوظة 2022 صنع بـ <img src="./images/heart.png" alt=""> بواسطة Monaya</p>
+        </div>
+    </footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="index.js"></script>
 </body>
 

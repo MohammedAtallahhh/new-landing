@@ -1,4 +1,4 @@
-.hero .carousel-item-inner {
+.hero .swiper-slide-inner {
   gap: 0.625rem 2.2rem;
 
   .item {
@@ -9,4 +9,8 @@
       font-size: 1.125rem;
     }
   }
+}
+
+.hero #categories {
+  padding: 3rem 1rem;
 }

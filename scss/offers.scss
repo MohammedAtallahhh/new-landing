@@ -19,6 +19,11 @@
 
   &:nth-child(even) {
     flex-direction: row-reverse;
+
+    .image {
+      margin-right: 0;
+      margin-left: 0.3125rem;
+    }
   }
 
   h3 {
@@ -34,7 +39,7 @@
   }
 
   .image {
-    margin-inline-end: 0.3125rem;
+    margin-right: 0.3125rem;
 
     img {
       display: block;
