@@ -64,53 +64,6 @@
   font-size: 1.125rem;
 }
 
-body {
-  font-family: Tajawal, sans-serif;
-}
-
-img {
-  max-width: 100%;
-  user-select: none;
-}
-
-button {
-  cursor: pointer;
-}
-
-.btn-primary {
-  background: #b92728;
-  border-color: #b92728;
-  border-radius: 9999rem;
-  padding-inline: 0.75rem;
-}
-
-.btn-primary:hover,
-.btn-primary:visited {
-  background-color: #a01818;
-  border-color: #a01818;
-}
-
-.btn-primary:focus,
-.btn-primary:active {
-  background-color: #a01818;
-  border-color: #a01818;
-  box-shadow: 0 0 0 0.25rem rgba(211, 45, 45, 0.5058823529) !important;
-}
-
-.brands {
-  background: #f2f2f2;
-}
-
-.features {
-  background: #b92728;
-  color: #ffffff;
-  padding: 2.5rem 0;
-  gap: 4rem;
-}
-.features .label {
-  font-size: 2rem;
-}
-
 .offers .title {
   font-size: 1.5rem;
 }
@@ -124,6 +77,9 @@ button {
 .offers .offer {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+.offers .offer:nth-child(even) {
+  flex-direction: row-reverse;
+}
 .offers .offer h3 {
   font-size: 1.125rem;
 }
@@ -132,6 +88,9 @@ button {
 }
 .offers .offer .rate {
   margin-bottom: 1.5rem;
+}
+.offers .offer .image {
+  margin-inline-end: 0.3125rem;
 }
 .offers .offer .image img {
   display: block;
@@ -159,7 +118,62 @@ button {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .offer .timer .label {
-  font-size: 0.875rem;
+  text-transform: capitalize;
+  font-size: 0.7rem;
+}
+
+body {
+  font-family: Tajawal, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  user-select: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+section {
+  overflow: hidden;
+}
+
+.btn-primary {
+  background: #b92728;
+  border-color: #b92728;
+  border-radius: 9999rem;
+  padding-inline: 0.75rem;
+}
+
+.btn-primary:hover,
+.btn-primary:visited {
+  background-color: #a01818;
+  border-color: #a01818;
+}
+
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: #a01818;
+  border-color: #a01818;
+  box-shadow: 0 0 0 0.25rem rgba(211, 45, 45, 0.5058823529) !important;
+}
+
+.brands {
+  background: #f2f2f2;
+}
+.brands .title {
+  font-size: 1.4rem;
+}
+
+.features {
+  background: #b92728;
+  color: #ffffff;
+  padding: 2.5rem 0;
+  gap: 4rem;
+}
+.features .label {
+  font-size: 2rem;
 }
 
 /*# sourceMappingURL=main.css.map */

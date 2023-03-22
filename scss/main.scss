@@ -4,6 +4,7 @@
 @import "variables";
 @import "header";
 @import "hero";
+@import "offers";
 
 body {
   font-family: Tajawal, sans-serif;
@@ -16,6 +17,10 @@ img {
 
 button {
   cursor: pointer;
+}
+
+section {
+  overflow: hidden;
 }
 
 .btn-primary {
@@ -41,6 +46,10 @@ button {
 // Brands
 .brands {
   background: #f2f2f2;
+
+  .title {
+    font-size: 1.4rem;
+  }
 }
 
 // FEATURES
@@ -52,70 +61,5 @@ button {
 
   .label {
     font-size: 2rem;
-  }
-}
-
-// OFFERS
-
-.offers {
-  .title {
-    font-size: 1.5rem;
-  }
-
-  &-list {
-    gap: 2.5rem;
-  }
-
-  .footer-btn {
-    margin-top: 2.5rem;
-  }
-}
-
-.offers .offer {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-  h3 {
-    font-size: 1.125rem;
-  }
-
-  p {
-    font-size: 0.8rem;
-  }
-
-  .rate {
-    margin-bottom: 1.5rem;
-  }
-
-  .image img {
-    display: block;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
-}
-
-.offer .timer {
-  font-family: "Syncopate", sans-serif;
-  font-weight: 400;
-
-  .digit {
-    position: relative;
-
-    &:not(:first-child):after {
-      content: ":";
-      position: absolute;
-      right: -0.65rem;
-      top: 0;
-    }
-  }
-
-  .number {
-    font-size: 0.875rem;
-    margin-bottom: 0.25rem;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
-
-  .label {
-    font-size: 0.875rem;
   }
 }
