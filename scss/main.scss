@@ -80,7 +80,7 @@ section {
     font-size: 1rem;
     font-weight: 700;
     padding-inline: 0.9rem;
-    height: 4.5rem;
+    height: 5rem;
     width: 100%;
 
     position: relative;
@@ -88,11 +88,11 @@ section {
 }
 
 // SHOPS
-.shops__carousel {
+.shops__slider {
   padding: 0;
   padding-top: 1.25rem;
 
-  .carousel-item-inner {
+  .swiper-slide-inner {
     max-width: 330px;
     margin: 0 auto;
 
@@ -128,19 +128,6 @@ section {
   }
 
   .swiper-slide {
-    max-width: 160px;
-
-    .image {
-      width: 8.5rem;
-      height: 8.5rem;
-
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-    }
-
     .label {
       font-size: 1.125rem;
       font-weight: 500;
@@ -182,7 +169,7 @@ section {
 }
 
 // Footer
-.footer {
+footer.footer {
   background: #f3a08e1f;
 
   .top {

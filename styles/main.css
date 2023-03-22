@@ -14,7 +14,15 @@
   border-radius: 999rem;
 }
 
-.btn {
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  background: none;
+  border: none;
   font-weight: 500;
 }
 
@@ -74,33 +82,59 @@
   background: #b92728 !important;
 }
 
-.header__top {
+.main__header .header__top--mobile {
   background: #b92728;
   color: #ffffff;
 }
-.header__top :is(.country, .language) {
+.main__header :is(.country, .language) {
   display: flex;
   align-items: center;
 }
-.header__top .arrow {
+.main__header .arrow {
   width: 1.5rem;
   height: 1.5rem;
 }
-.header__top .text {
+.main__header .text {
   font-weight: 500;
 }
-.header__top .country .text {
+.main__header .country .text {
   font-size: 0.875rem;
 }
-.header__top .language .text {
+.main__header .language .text {
   font-size: 1rem;
 }
-
-.header__bottom .icon {
+.main__header .search-icon {
   position: absolute;
   left: 0.95rem;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.header__bottom {
+  background: #b92728;
+  color: #ffffff;
+}
+.header__bottom .bottom-btn {
+  color: black;
+  background: none;
+  border: none;
+  font-weight: 700;
+  padding-left: 1.5rem;
+  border-left: 1px solid #c4c4c4;
+}
+.header__bottom .categories a {
+  font-size: 0.875rem;
+}
+.header__bottom .categories a:hover {
+  text-decoration: underline;
+  color: #f0f0f0;
+}
+.header__bottom .nav__actions button {
+  color: inherit;
+  font-weight: 400;
+}
+.header__bottom .nav__actions button span {
+  font-size: 0.875rem;
 }
 
 .hero .swiper-slide-inner {
@@ -247,23 +281,23 @@ section {
   font-size: 1rem;
   font-weight: 700;
   padding-inline: 0.9rem;
-  height: 4.5rem;
+  height: 5rem;
   width: 100%;
   position: relative;
 }
 
-.shops__carousel {
+.shops__slider {
   padding: 0;
   padding-top: 1.25rem;
 }
-.shops__carousel .carousel-item-inner {
+.shops__slider .swiper-slide-inner {
   max-width: 330px;
   margin: 0 auto;
 }
-.shops__carousel .carousel-item-inner .name {
+.shops__slider .swiper-slide-inner .name {
   font-size: 1.125rem;
 }
-.shops__carousel .carousel-item-inner .price {
+.shops__slider .swiper-slide-inner .price {
   font-size: 2.25rem;
   font-weight: 700;
   color: #b92728;
@@ -284,18 +318,6 @@ section {
   font-weight: 400;
   text-align: center;
   margin-top: 2.5rem;
-}
-.sale .swiper-slide {
-  max-width: 160px;
-}
-.sale .swiper-slide .image {
-  width: 8.5rem;
-  height: 8.5rem;
-}
-.sale .swiper-slide .image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 .sale .swiper-slide .label {
   font-size: 1.125rem;
@@ -327,40 +349,40 @@ section {
   font-size: 0.75rem;
 }
 
-.footer {
+footer.footer {
   background: rgba(243, 160, 142, 0.1215686275);
 }
-.footer .top {
+footer.footer .top {
   padding: 2rem 3rem;
 }
-.footer .bottom {
+footer.footer .bottom {
   background: #b92728;
   color: #ffffff;
 }
-.footer .bottom p {
+footer.footer .bottom p {
   font-size: 0.875rem;
   margin-bottom: 0;
 }
-.footer h3 {
+footer.footer h3 {
   font-size: 1.1rem;
   font-weight: 500;
   margin-bottom: 0;
 }
-.footer .footer__lists {
+footer.footer .footer__lists {
   gap: 2.5rem;
 }
-.footer .footer__lists .list {
+footer.footer .footer__lists .list {
   display: flex;
   flex-direction: column;
 }
-.footer .footer__lists .list .label {
+footer.footer .footer__lists .list .label {
   color: #b92728;
   margin-bottom: 1rem;
 }
-.footer .footer__lists .list a {
+footer.footer .footer__lists .list a {
   font-weight: 500;
 }
-.footer .footer__lists .list a:hover {
+footer.footer .footer__lists .list a:hover {
   color: #b92728;
 }
 

@@ -1,3 +1,13 @@
+new Swiper("#categories", {
+  spaceBetween: 20,
+  autoplay: true,
+
+  pagination: {
+    el: ".categories__slider__controls",
+    clickable: true,
+  },
+});
+
 new Swiper("#shops", {
   spaceBetween: 20,
   slidesPerView: 1,
@@ -38,16 +48,6 @@ new Swiper("#sale", {
 
   pagination: {
     el: ".sale__slider__controls",
-    clickable: true,
-  },
-});
-
-new Swiper("#categories", {
-  spaceBetween: 20,
-  autoplay: true,
-
-  pagination: {
-    el: ".categories__slider__controls",
     clickable: true,
   },
 });

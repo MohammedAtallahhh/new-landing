@@ -1,6 +1,8 @@
-.header__top {
-  background: $primary;
-  color: $primary-accent;
+.main__header {
+  .header__top--mobile {
+    background: $primary;
+    color: $primary-accent;
+  }
 
   & :is(.country, .language) {
     display: flex;
@@ -23,13 +25,43 @@
   .language .text {
     font-size: 1rem;
   }
-}
 
-.header__bottom {
-  .icon {
+  .search-icon {
     position: absolute;
     left: 0.95rem;
     top: 50%;
     transform: translateY(-50%);
+  }
+}
+
+.header__bottom {
+  background: $primary;
+  color: $primary-accent;
+
+  .bottom-btn {
+    color: black;
+    background: none;
+    border: none;
+
+    font-weight: 700;
+    padding-left: 1.5rem;
+    border-left: 1px solid #c4c4c4;
+  }
+
+  .categories a {
+    font-size: 0.875rem;
+
+    &:hover {
+      text-decoration: underline;
+      color: #f0f0f0;
+    }
+  }
+
+  .nav__actions button {
+    color: inherit;
+    font-weight: 400;
+    span {
+      font-size: 0.875rem;
+    }
   }
 }

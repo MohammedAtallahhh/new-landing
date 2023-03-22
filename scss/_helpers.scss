@@ -15,7 +15,15 @@
   border-radius: 999rem;
 }
 
-.btn {
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  background: none;
+  border: none;
   font-weight: 500;
 }
 
