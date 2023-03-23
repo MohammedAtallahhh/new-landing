@@ -93,3 +93,13 @@ new Swiper("#offers", {
     clickable: true,
   },
 });
+
+new Swiper("#testimonials", {
+  spaceBetween: 20,
+  autoplay: true,
+
+  navigation: {
+    nextEl: ".prev",
+    prevEl: ".next",
+  },
+});
