@@ -1,7 +1,7 @@
 /* Tajawal Font */
 @import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
 .title {
-  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 1rem + 1.5vw, 2.25rem);
   font-weight: 700;
 }
 
@@ -460,6 +460,55 @@ section {
 }
 .sale .slider__controls .swiper-pagination-bullet-active {
   background: white !important;
+}
+
+.stores {
+  background: #f2f2f2;
+}
+.stores header {
+  position: relative;
+}
+@media (min-width: 991px) {
+  .stores header {
+    padding: 1rem 0;
+  }
+}
+.stores header .prev {
+  position: absolute;
+  top: 0;
+  left: 3rem;
+}
+.stores header .next {
+  position: absolute;
+  top: 0;
+  right: 3rem;
+}
+.stores .store {
+  max-width: 528px;
+  height: 100%;
+  margin: 0 auto;
+  font-size: clamp(1.125rem, 1.2rem + 1.5vw, 1.5rem);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: white;
+}
+.stores .store .item {
+  border-bottom: 1px solid #c4c4c4;
+  padding: 0 0.5rem;
+}
+.stores .store header {
+  padding: 0.3rem 0.6rem;
+}
+.stores .store .content h4 {
+  font-size: clamp(1rem, 0.5rem + 1.5vw, 1.5rem);
+}
+.stores .store .content p {
+  font-size: clamp(0.875rem, 0.5rem + 1.5vw, 1.125rem);
+}
+.stores .store .content .price {
+  font-size: clamp(1.125rem, 1rem + 1.5vw, 1.5rem);
+}
+.stores .store .content .rate img {
+  width: 0.9rem;
 }
 
 .testimonials {

@@ -156,6 +156,68 @@ section {
   }
 }
 
+// Stores
+.stores {
+  background: #f2f2f2;
+
+  header {
+    position: relative;
+
+    @media (min-width: 991px) {
+      padding: 1rem 0;
+    }
+
+    .prev {
+      position: absolute;
+      top: 0;
+      left: 3rem;
+    }
+
+    .next {
+      position: absolute;
+      top: 0;
+      right: 3rem;
+    }
+  }
+
+  .store {
+    max-width: 528px;
+    height: 100%;
+    margin: 0 auto;
+
+    font-size: clamp(1.125rem, 1.2rem + 1.5vw, 1.5rem);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: white;
+
+    .item {
+      border-bottom: 1px solid #c4c4c4;
+      padding: 0 0.5rem;
+    }
+
+    header {
+      padding: 0.3rem 0.6rem;
+    }
+
+    .content {
+      h4 {
+        font-size: clamp(1rem, 0.5rem + 1.5vw, 1.5rem);
+      }
+
+      p {
+        font-size: clamp(0.875rem, 0.5rem + 1.5vw, 1.125rem);
+      }
+
+      .price {
+        font-size: clamp(1.125rem, 1rem + 1.5vw, 1.5rem);
+      }
+
+      .rate img {
+        width: 0.9rem;
+      }
+    }
+  }
+}
+
 // Testimonials
 .testimonials {
   background: $primary;

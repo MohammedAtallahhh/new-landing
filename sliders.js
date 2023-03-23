@@ -94,6 +94,31 @@ new Swiper("#offers", {
   },
 });
 
+new Swiper("#stores", {
+  spaceBetween: 20,
+  autoplay: true,
+
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+
+    1200: {
+      slidesPerView: 3,
+    },
+  },
+
+  navigation: {
+    nextEl: ".prev",
+    prevEl: ".next",
+  },
+
+  pagination: {
+    el: ".stores__slider__controls",
+    clickable: true,
+  },
+});
+
 new Swiper("#testimonials", {
   spaceBetween: 20,
   autoplay: true,
