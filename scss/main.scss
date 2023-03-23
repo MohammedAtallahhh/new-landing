@@ -76,13 +76,13 @@ section {
 // Advertisement
 .ad {
   h3 {
-    font-size: 0.875rem;
+    font-size: clamp(0.875rem, 0.5rem + 1.5vw, 1.8rem);
     font-weight: 700;
     margin-bottom: 0.625rem;
   }
 
   h4 {
-    font-size: 0.875rem;
+    font-size: clamp(0.875rem, 0.5rem + 1.5vw, 1.8rem);
     font-weight: 700;
     color: $primary;
     margin-bottom: 1.7rem;
@@ -93,13 +93,17 @@ section {
   }
 
   .btn {
-    font-size: 1rem;
+    font-size: clamp(1rem, 0.75rem + 2vw, 3rem);
     font-weight: 700;
     padding-inline: 0.9rem;
     height: 5rem;
     width: 100%;
 
     position: relative;
+
+    @media (min-width: 768px) {
+      height: 6rem;
+    }
   }
 }
 
@@ -129,11 +133,14 @@ section {
     font-weight: 500;
     margin-bottom: 3rem;
 
+    .title {
+      font-size: clamp(0.875rem, 1.2rem + 1.5vw, 2.5rem);
+    }
+
     p {
-      font-size: 0.875rem;
+      font-size: clamp(0.875rem, 0.5rem + 1.5vw, 1.125rem);
       font-weight: 400;
-      text-align: center;
-      margin-top: 2.5rem;
+      margin-top: 1.5rem;
     }
   }
 
@@ -152,7 +159,7 @@ section {
 // Newsletter
 .newsletter {
   h5 {
-    font-size: 0.875rem;
+    font-size: clamp(0.875rem, 0.5rem + 2vw, 2.25rem);
     font-weight: 500;
     margin: 1.4rem 0 2.2rem;
 
@@ -165,6 +172,9 @@ section {
     position: relative;
     display: flex;
     width: 100%;
+    max-width: 45rem;
+    margin-inline: auto;
+    font-size: clamp(0.875rem, 0.5rem + 1.5vw, 1.125rem);
 
     button {
       position: absolute;
@@ -176,6 +186,10 @@ section {
       font-size: 0.75rem;
     }
   }
+
+  @media (min-width: 768px) {
+    padding: 6rem 0;
+  }
 }
 
 // Footer
@@ -183,7 +197,7 @@ footer.footer {
   background: #f3a08e1f;
 
   .top {
-    padding: 2rem 3rem;
+    padding: 2.5rem 3rem;
   }
 
   .bottom {
@@ -191,13 +205,13 @@ footer.footer {
     color: $primary-accent;
 
     p {
-      font-size: 0.875rem;
+      font-size: clamp(0.875rem, 0.5rem + 1.5vw, 1.5rem);
       margin-bottom: 0;
     }
   }
 
   h3 {
-    font-size: 1.1rem;
+    font-size: 1.125rem;
     font-weight: 500;
     margin-bottom: 0;
   }
@@ -210,17 +224,23 @@ footer.footer {
       flex-direction: column;
 
       .label {
+        font-size: clamp(0.875rem, 0.5rem + 1.5vw, 1.5rem);
         color: $primary;
         margin-bottom: 1rem;
       }
 
       a {
+        font-size: clamp(0.875rem, 0.5rem + 1.5vw, 1.125rem);
         font-weight: 500;
 
         &:hover {
           color: $primary;
         }
       }
+    }
+
+    @media (min-width: 991px) {
+      gap: 6rem;
     }
   }
 }

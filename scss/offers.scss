@@ -1,5 +1,6 @@
 .offers {
   background: #fff6f2;
+  padding: 1.5rem 0;
 
   .title {
     font-size: 1.5rem;
@@ -7,6 +8,10 @@
 
   .footer-btn {
     margin-top: 2.5rem;
+  }
+
+  @media (min-width: 768px) {
+    padding: 2rem 0;
   }
 }
 
