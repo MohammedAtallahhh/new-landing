@@ -65,3 +65,27 @@ new Swiper("#sale", {
     clickable: true,
   },
 });
+
+new Swiper("#offers", {
+  spaceBetween: 20,
+  autoplay: true,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+
+    991: {
+      slidesPerView: 3,
+    },
+
+    1400: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+    },
+  },
+
+  pagination: {
+    el: ".offers__slider__controls",
+    clickable: true,
+  },
+});
