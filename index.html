@@ -24,16 +24,18 @@
 
                 <!-- Country -->
                 <div class="dropdown country">
-                    <img src="./images/SA-flag.svg" alt="Country flag" class="flag">
+                    <button class="dropdown-btn">
+                        <img src="./images/SA-flag.svg" alt="Country flag" class="flag">
 
-                    <div class="text d-flex flex-column align-items-center me-2">
-                        <span>تسليم لـ</span>
-                        <span>جدة</span>
-                    </div>
+                        <div class="text d-flex flex-column align-items-center me-2">
+                            <span>تسليم لـ</span>
+                            <span>جدة</span>
+                        </div>
 
-                    <div class="arrow d-flex justify-content-center align-items-center">
-                        <img src="./images/arrow.svg" alt="arrow down">
-                    </div>
+                        <div class="arrow d-flex justify-content-center align-items-center">
+                            <img src="./images/arrow.svg" alt="arrow down">
+                        </div>
+                    </button>
 
                     <ul class="items">
                         <li>
@@ -49,10 +51,12 @@
 
                 <!-- Language -->
                 <div class="dropdown language">
-                    <h4 class="text">عربي</h4>
-                    <div class="arrow d-flex justify-content-center align-items-center">
-                        <img src="./images/arrow.svg" alt="arrow down">
-                    </div>
+                    <button class="dropdown-btn">
+                        <h4 class="text">عربي</h4>
+                        <div class="arrow d-flex justify-content-center align-items-center">
+                            <img src="./images/arrow.svg" alt="arrow down">
+                        </div>
+                    </button>
 
                     <ul class="items">
                         <li>
@@ -95,16 +99,18 @@
 
                 <!-- Country -->
                 <div class="dropdown country">
-                    <img src="./images/SA-flag.svg" alt="Country flag" class="flag">
+                    <button class="dropdown-btn">
+                        <img src="./images/SA-flag.svg" alt="Country flag" class="flag">
 
-                    <div class="text d-flex flex-column me-2">
-                        <span>تسليم لـ</span>
-                        <span>جدة</span>
-                    </div>
+                        <div class="text d-flex flex-column me-2">
+                            <span>تسليم لـ</span>
+                            <span>جدة</span>
+                        </div>
 
-                    <div class="arrow d-flex justify-content-center align-items-center">
-                        <img src="./images/arrow-black.svg" alt="arrow down">
-                    </div>
+                        <div class="arrow d-flex justify-content-center align-items-center">
+                            <img src="./images/arrow-black.svg" alt="arrow down">
+                        </div>
+                    </button>
 
                     <ul class="items">
                         <li>
@@ -118,7 +124,6 @@
                     </ul>
                 </div>
 
-
                 <!-- Search bar -->
                 <div class="search position-relative flex-grow-1 d-flex">
                     <input type="search" name="search" placeholder="عن ماذا تبحث؟" class="input">
@@ -129,10 +134,13 @@
 
                 <!-- Language -->
                 <div class="dropdown language ms-4">
-                    <h4 class="text">عربي</h4>
-                    <div class="arrow d-flex justify-content-center align-items-center">
-                        <img src="./images/arrow-black.svg" alt="arrow down">
-                    </div>
+
+                    <button class="dropdown-btn">
+                        <h4 class="text">عربي</h4>
+                        <div class="arrow d-flex justify-content-center align-items-center">
+                            <img src="./images/arrow-black.svg" alt="arrow down">
+                        </div>
+                    </button>
 
                     <ul class="items">
                         <li>
@@ -159,12 +167,51 @@
         <div class="header__bottom d-none d-md-block" style="padding-block: 10px;">
             <div class="container-xl d-flex justify-content-between">
 
+                <!-- Categories dropdown -->
+                <div class="dropdown">
+                    <button class="dropdown-btn bottom-btn">
+                        تسوق حسب الأقسام
+                        <img src="./images/arrow-black.svg" alt="">
+                    </button>
 
-                <button class="bottom-btn">
-                    تسوق حسب الأقسام
-                    <img src="./images/arrow-black.svg" alt="">
-                </button>
+                    <ul class="items">
 
+                        <h4>Top Brands</h4>
+
+                        <li>
+                            <a href="#">Trendyol Collection</a>
+                        </li>
+                        <li>
+                            <a href="#">Calvin Klein</a>
+                        </li>
+                        <li>
+                            <a href="#">LC Waikiki</a>
+                        </li>
+                        <li>
+                            <a href="#">Defacto</a>
+                        </li>
+                        <li>
+                            <a href="#">Converse</a>
+                        </li>
+                        <li>
+                            <a href="#">NA-KD</a>
+                        </li>
+                        <li>
+                            <a href="#">LTB</a>
+                        </li>
+                        <li>
+                            <a href="#">MEXX</a>
+                        </li>
+                        <li>
+                            <a href="#">Champion</a>
+                        </li>
+                        <li>
+                            <a href="#">Levi's</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Navbar categories -->
                 <ul class="categories d-none d-xl-flex flex-grow-1 align-items-center gap-4 pe-4">
                     <li>
                         <a href="#">الإلكترونيات</a>
@@ -186,6 +233,7 @@
                     </li>
                 </ul>
 
+                <!-- Navbar actions -->
                 <div class="nav__actions d-flex align-items-center gap-4">
                     <button class="d-flex flex-column justify-content-center align-items-center">
                         <img src="./images/nav-login.svg" alt="" style="width: 1.8rem;">

@@ -109,8 +109,8 @@ new Swiper("#stores", {
   },
 
   navigation: {
-    nextEl: ".prev",
-    prevEl: ".next",
+    nextEl: "#stores .prev",
+    prevEl: "#stores .next",
   },
 
   pagination: {
@@ -124,7 +124,7 @@ new Swiper("#testimonials", {
   autoplay: true,
 
   navigation: {
-    nextEl: ".prev",
-    prevEl: ".next",
+    nextEl: "#testimonials .prev",
+    prevEl: "#testimonials .next",
   },
 });
