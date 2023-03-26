@@ -62,11 +62,17 @@ button {
 }
 
 .btn-secondary:hover {
+  background: white;
+  border-color: white;
+  color: $primary;
   opacity: 0.9;
 }
 
 .btn-secondary:focus,
 .btn-secondary:active {
+  background: white;
+  border-color: white;
+  color: $primary;
   border-color: transparent;
   box-shadow: 0 0 0 0.25rem #dddddd81 !important;
 }
