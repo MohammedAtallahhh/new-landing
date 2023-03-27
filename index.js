@@ -7,7 +7,9 @@ const closeDropdown = () => {
 };
 
 header.addEventListener("click", (e) => {
-  const target = e.target.closest(".dropdown-btn");
+  const target =
+    e.target.closest(".dropdown-btn") ||
+    e.target.closest(".dropdown .items li");
   if (!target) return;
 
   const parent = target.parentElement;
@@ -22,10 +24,7 @@ header.addEventListener("click", (e) => {
 });
 
 document.addEventListener("click", (e) => {
-  const target =
-    e.target.closest(".dropdown-btn") ||
-    !e.target.closest(".dropdown .items li");
-  if (target) return;
+  if (e.target.closest(".dropdown-btn")) return;
 
   closeDropdown();
 });
