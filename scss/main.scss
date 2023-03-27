@@ -97,17 +97,23 @@ section {
     }
   }
 
-  .btn {
-    font-size: clamp(1rem, 0.75rem + 2vw, 3rem);
+  .ad-btn {
     font-weight: 700;
-    padding-inline: 0.9rem;
     height: 5rem;
     width: 100%;
-
-    outline: 2px dashed $primary;
-    outline-offset: 5px;
+    max-width: 1200px;
+    margin: 0 auto;
 
     position: relative;
+
+    button {
+      width: 100%;
+      height: 100%;
+      font-size: clamp(1rem, 0.75rem + 2vw, 3rem);
+
+      outline-offset: 5px;
+      outline: 2px dashed $primary;
+    }
 
     @media (min-width: 768px) {
       height: 6rem;
@@ -127,6 +133,11 @@ section {
   .swiper-slide-inner {
     max-width: 330px;
     margin: 0 auto;
+    background: white;
+
+    .content {
+      padding: 0 0.6rem;
+    }
 
     .name {
       font-size: 1.125rem;
@@ -162,10 +173,12 @@ section {
       font-weight: 500;
     }
 
-    img {
-      border-radius: 999rem;
-      padding: 5px;
-      border: 2px dashed white;
+    .image {
+      background: url("../images/border-circle.svg") no-repeat center center /
+        100% 100%;
+      img {
+        padding: 6px;
+      }
     }
   }
 
@@ -183,6 +196,10 @@ section {
 
     @media (min-width: 991px) {
       padding: 1rem 0;
+    }
+
+    button[aria-disabled="true"] {
+      display: none !important;
     }
 
     .prev {
@@ -275,7 +292,7 @@ section {
     .image img {
       width: 10rem;
 
-      border: 2px dashed white;
+      border: 2px solid white;
       border-radius: 999rem;
       padding: 5px;
 

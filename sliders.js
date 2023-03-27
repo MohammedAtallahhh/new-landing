@@ -12,6 +12,10 @@ new Swiper("#categories", {
     },
 
     1200: {
+      slidesPerView: 7,
+    },
+
+    1400: {
       slidesPerView: 8,
     },
   },
@@ -33,6 +37,10 @@ new Swiper("#shops", {
 
     991: {
       slidesPerView: 3,
+    },
+
+    1200: {
+      slidesPerView: 4,
     },
   },
 
@@ -109,8 +117,8 @@ new Swiper("#stores", {
   },
 
   navigation: {
-    nextEl: "#stores .prev",
-    prevEl: "#stores .next",
+    nextEl: ".stores .prev",
+    prevEl: ".stores .next",
   },
 
   pagination: {
