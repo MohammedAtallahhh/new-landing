@@ -1,5 +1,5 @@
 new Swiper("#categories", {
-  spaceBetween: 30,
+  spaceBetween: 40,
   autoplay: true,
 
   breakpoints: {
