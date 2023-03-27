@@ -56,6 +56,10 @@ section {
       width: auto;
     }
   }
+
+  @media (min-width: 991px) {
+    padding-bottom: 6rem !important;
+  }
 }
 
 // FEATURES
@@ -100,6 +104,9 @@ section {
     height: 5rem;
     width: 100%;
 
+    outline: 2px dashed $primary;
+    outline-offset: 5px;
+
     position: relative;
 
     @media (min-width: 768px) {
@@ -109,6 +116,10 @@ section {
 }
 
 // SHOPS
+.shops {
+  background: #fff6f2;
+}
+
 .shops__slider {
   padding: 0;
   padding-top: 1.25rem;
@@ -149,6 +160,12 @@ section {
     .label {
       font-size: 1.125rem;
       font-weight: 500;
+    }
+
+    img {
+      border-radius: 999rem;
+      padding: 5px;
+      border: 2px dashed white;
     }
   }
 
@@ -255,8 +272,12 @@ section {
       line-height: 2em;
     }
 
-    img {
+    .image img {
       width: 10rem;
+
+      border: 2px dashed white;
+      border-radius: 999rem;
+      padding: 5px;
 
       @media (min-width: 768px) {
         width: 13rem;
@@ -311,9 +332,10 @@ section {
       position: absolute;
       left: 0.4rem;
       top: 50%;
-      height: 90%;
+      height: 85%;
       transform: translateY(-50%);
 
+      font-size: clamp(0.75rem, 0.5rem + 1vw, 1rem);
       padding: 0 2em;
     }
   }

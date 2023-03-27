@@ -1,5 +1,5 @@
 new Swiper("#categories", {
-  spaceBetween: 20,
+  spaceBetween: 30,
   autoplay: true,
 
   breakpoints: {
@@ -8,11 +8,11 @@ new Swiper("#categories", {
     },
 
     991: {
-      slidesPerView: 5,
+      slidesPerView: 6,
     },
 
     1200: {
-      slidesPerView: 6,
+      slidesPerView: 8,
     },
   },
 

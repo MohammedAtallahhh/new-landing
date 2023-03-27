@@ -13,6 +13,10 @@
     0px 4px 16px rgba(51, 51, 51, 0.08);
 
   border-radius: 999rem;
+
+  @media (min-width: 991px) {
+    padding: 0.85rem 2rem;
+  }
 }
 
 .image {
