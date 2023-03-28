@@ -223,6 +223,7 @@ button {
 
 .hero .carousel .carousel-indicators button {
   background: #212529;
+  opacity: 1;
   border: 0;
 }
 .hero .carousel .carousel-indicators button.active {
@@ -469,6 +470,15 @@ section {
   font-size: 0.875rem;
   color: rgba(211, 220, 223, 0.6);
   cursor: pointer;
+}
+.mobile-nav .link img {
+  filter: invert(20%) opacity(60%);
+}
+.mobile-nav .link:hover, .mobile-nav .link.active {
+  color: #fbfcfc;
+}
+.mobile-nav .link:hover img, .mobile-nav .link.active img {
+  filter: unset;
 }
 @media (min-width: 500px) {
   .mobile-nav .link {

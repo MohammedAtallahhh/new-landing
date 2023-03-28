@@ -54,10 +54,22 @@ section {
     align-items: center;
 
     font-size: 0.875rem;
-
     color: #d3dcdf99;
 
     cursor: pointer;
+
+    img {
+      filter: invert(20%) opacity(60%);
+    }
+
+    &:hover,
+    &.active {
+      color: #fbfcfc;
+
+      img {
+        filter: unset;
+      }
+    }
 
     @media (min-width: 500px) {
       font-size: 1rem;

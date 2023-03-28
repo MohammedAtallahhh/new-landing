@@ -1,30 +1,5 @@
 const header = document.querySelector(".main__header");
 const offers = [...document.querySelectorAll("#offers .offer")];
-const mobileNavLinks = [...document.querySelectorAll(".mobile-nav .link")];
-
-// Mobile navbar
-mobileNavLinks.forEach((link) => {
-  const svg = link.querySelector(".svg-object").contentDocument;
-  const icon = svg.querySelector("path");
-
-  if (link.classList.contains("active")) {
-    link.style.color = "white";
-    icon.style.fill = "white";
-  } else {
-    link.style.color = "#d3dcdf99";
-    icon.style.fill = "#d3dcdf99";
-
-    link.addEventListener("mouseover", () => {
-      link.style.color = "white";
-      icon.style.fill = "white";
-    });
-
-    link.addEventListener("mouseleave", () => {
-      link.style.color = "#d3dcdf99";
-      icon.style.fill = "#d3dcdf99";
-    });
-  }
-});
 
 // Header dropdowns
 const closeDropdown = () => {
