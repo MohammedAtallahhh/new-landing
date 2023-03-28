@@ -97,6 +97,10 @@ section {
     }
   }
 
+  @media (min-width: 768px) {
+    background: white;
+  }
+
   @media (min-width: 991px) {
     padding-bottom: 6rem !important;
   }

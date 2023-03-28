@@ -505,6 +505,11 @@ section {
     width: auto;
   }
 }
+@media (min-width: 768px) {
+  .brands {
+    background: white;
+  }
+}
 @media (min-width: 991px) {
   .brands {
     padding-bottom: 6rem !important;
