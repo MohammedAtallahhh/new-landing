@@ -13,7 +13,7 @@ header.addEventListener("click", (e) => {
     e.target.closest(".dropdown .items li");
   if (!target) return;
 
-  const parent = target.parentElement;
+  const parent = target.closest(".dropdown");
 
   const currentActive = document.querySelector(".dropdown .items.active");
 
@@ -25,9 +25,9 @@ header.addEventListener("click", (e) => {
 });
 
 document.addEventListener("click", (e) => {
-  if (e.target.closest(".dropdown-btn")) return;
-
-  closeDropdown();
+  if (!e.target.closest(".dropdown")) {
+    closeDropdown();
+  }
 });
 
 window.addEventListener("scroll", closeDropdown);
